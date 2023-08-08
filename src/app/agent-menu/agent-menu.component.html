@@ -1,0 +1,13 @@
+<div class="form-group">
+    <textarea [(ngModel)]="textAreaContent" (input)="onInputChange($event)" #agentTextarea class="commentArea form-control"
+        [ngClass]="{'highlight': highlighter}"></textarea>
+
+    <div class="dropdown" *ngIf="showDropdown" tabindex="0">
+        <ul>
+            <li *ngFor="let option of dropdownOptions; let i = index" [class.highlighted]="i === highlightedIndex"
+                (click)="insertOption(option)">
+                {{ option }}
+            </li>
+        </ul>
+    </div>
+</div>

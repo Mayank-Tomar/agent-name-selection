@@ -1,0 +1,56 @@
+.form-group {
+    position: relative;
+    display: inline-block;
+
+    .commentArea {
+        min-width: 665px;
+        min-height: 200px;
+        border: 3px orange solid;
+        border-radius: 9px;
+        margin: 94px;
+
+        &:focus {
+            outline: none !important;
+            border: 3px #FFA500 solid;
+            box-shadow: 0 0 10px #719ECE;
+        }
+    }
+
+    .highlight {
+        &:first-line {
+            background-color: #CCB647;
+            font-weight: bold;
+        }
+    }
+
+    .dropdown {
+        position: absolute;
+        top: 128px;
+        left: 106px;
+        width: 26%;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        z-index: 1;
+        border-radius: 4px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        padding: 5px;
+        cursor: pointer;
+        padding-left: 28px;
+    }
+
+    li:hover {
+        background-color: #f1f1f1;
+    }
+
+    li.highlighted {
+        background-color: #b3d4fc;
+    }
+}
